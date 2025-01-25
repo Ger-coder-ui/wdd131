@@ -1,0 +1,21 @@
+/* Override mobile styles and add larger view-specific styles */
+
+@media (min-width: 1200px) {
+    /* Desktop and larger views */
+    header {
+        padding: 2em;
+    }
+    nav ul {
+        justify-content: flex-start;
+    }
+    nav li {
+        margin-right: 4em;
+    }
+    main {
+        flex-wrap: nowrap;
+    }
+    figure {
+        margin: 2em;
+        width: calc(33.3% - 2em);
+    }
+}
