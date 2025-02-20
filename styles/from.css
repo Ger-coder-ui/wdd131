@@ -2,7 +2,6 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f7f7f7;
 }
 
 header {
@@ -25,7 +24,6 @@ form {
     border: 1px solid #ccc;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
 }
 
 label {
@@ -34,16 +32,11 @@ label {
 }
 
 #useful-features {
-    margin-left: 0;
+    margin-left: 20px;
 }
 
 #useful-features input[type="checkbox"] {
     margin-right: 10px;
-}
-
-#useful-features label {
-    display: inline-block;
-    margin-right: 20px;
 }
 
 textarea {
@@ -60,6 +53,9 @@ footer {
     text-align: center;
     clear: both;
 }
+
+
+
 
 
 
