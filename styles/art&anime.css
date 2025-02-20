@@ -1,21 +1,19 @@
-/* Global Styles */
-
+/* General Reset */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-body { 
+/* Body Styles */
+body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
     background-color: #f9f9f9;
-    padding: 0;
 }
 
 /* Header Styles */
-
 header {
     background-color: #333;
     color: #fff;
@@ -29,14 +27,12 @@ header h1 {
 }
 
 /* Navigation Styles */
-
 nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    justify-content: center; /* Center the navigation items */
 }
 
 nav li {
@@ -46,105 +42,72 @@ nav li {
 nav a {
     color: #fff;
     text-decoration: none;
-    padding: 10px;
     transition: color 0.2s ease, background-color 0.2s ease;
 }
 
 nav a:hover {
     color: #333;
     background-color: #ccc;
+    padding: 10px 20px;
     border-radius: 10px;
 }
 
 /* Main Styles */
-
 main {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-    gap: 20px;
-    max-width: 1200px;
+    max-width: 1200px; /* Set a max-width for better readability on large screens */
     margin: 40px auto;
     padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px;
 }
 
+/* Card Styles */
 .card {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    transition: transform 0.3s ease;
-}
-
-.card:hover {
-    transform: scale(1.05);
+    width: 100%; /* Ensure cards are responsive */
 }
 
 .card h2 {
     font-size: 1.5em;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
 }
 
 .card img {
     width: 100%;
-    height: auto;
+    height: 200px; /* Adjust image height */
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
 }
 
-/* About Section Styles */
-
-#about {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
 }
 
-#about h2 {
-    font-size: 1.8em;
-    margin-bottom: 1em;
-}
-
-#about p {
-    font-size: 1em;
-    line-height: 1.6;
-}
-
-/* Contact Section Styles */
-
-#contact {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-}
-
-#contact h2 {
-    font-size: 1.8em;
-    margin-bottom: 1em;
-}
-
-form label {
-    font-size: 1em;
+footer p {
     margin-bottom: 0.5em;
-    display: block;
 }
 
-form input,
-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 1em;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-    font-size: 1em;
+/* Responsive Design */
+@media (min-width: 768px) {
+    main {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on medium screens */
+    }
 }
 
-form textarea {
-    height: 150px
+@media (min-width: 1024px) {
+    main {
+        grid-template-columns: repeat(3, 1fr); /* Three columns on larger screens */
+    }
 }
