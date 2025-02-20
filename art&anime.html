@@ -28,10 +28,9 @@
             <section id="animation-gallery">
                 <h3>Featured Animations</h3>
                 <div class="gallery">
-                    <!-- Native Lazy Loading -->
-                    <img src="images/Animation.jpeg" alt="Animation 1" loading="lazy">
-                    <img src="images/ART IMAGEE 2.jpeg" alt="Animation 2" loading="lazy">
-                    <img src="images/painting-brushes-scaled.jpg" alt="Animation 3" loading="lazy">
+                    <img src="images/Animation.jpeg" alt="Animation 1" class="lazyload" data-src="images/Animation.jpeg">
+                    <img src="images/ART IMAGEE 2.jpeg" alt="Animation 2" class="lazyload" data-src="images/ART IMAGEE 2.jpeg">
+                    <img src="images/painting-brushes-scaled.jpg" alt="Animation 3" class="lazyload" data-src="images/painting-brushes-scaled.jpg">
                 </div>
             </section>
         </section>
@@ -45,15 +44,15 @@
             <h2>Contact Us</h2>
             <form id="contact-form" onsubmit="return handleFormSubmit(event)">
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="user_name" required><br>
+                <input type="text" id="name" name="Gerald Mango" required><br>
 
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="user_email" required><br>
+                <input type="email" id="email" name="geraldmango3@gmail.com" required><br>
 
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" required></textarea><br>
 
-                <button type="submit">Post</button>
+                <button type="post">Post</button>
             </form>
         </section>
     </main>
