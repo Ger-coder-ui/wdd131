@@ -1,4 +1,4 @@
-
+/* Reset some default styles */
 * {
     margin: 0;
     padding: 0;
@@ -42,10 +42,11 @@ section {
 }
 
 .gallery img {
-    width: 100%;
+    width: 80%; /* Set image width to 80% of its container */
+    max-width: 400px; /* Ensure the image doesn’t become too large */
     height: auto;
     display: block;
-    margin-bottom: 10px;
+    margin: 0 auto 10px; /* Center the images */
 }
 
 footer {
@@ -57,7 +58,7 @@ footer {
 
 @media (min-width: 768px) {
     .gallery img {
-        width: 48%;
-        margin: 1%;
+        width: 48
+
     }
-}
+}    
