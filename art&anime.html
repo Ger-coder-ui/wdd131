@@ -1,103 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Art & Animation Hub</title>
     <link rel="stylesheet" href="styles/art&anime.css">
 </head>
+
 <body>
     <header>
         <h1>Art & Animation Hub</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="intro">
+        <section id="home">
             <h2>Welcome to the World of Art & Animation</h2>
             <p>Explore the creative universe of animation, from stunning visual effects to character design.</p>
+
+            <section id="animation-gallery">
+                <h3>Featured Animations</h3>
+                <div class="gallery">
+                    <img src="images/Animation.jpeg" alt="Animation 1" class="lazyload" data-src="images/Animation.jpeg">
+                    <img src="images/ART IMAGEE 2.jpeg" alt="Animation 2" class="lazyload" data-src="images/ART IMAGEE 2.jpeg">
+                    <img src="images/painting-brushes-scaled.jpg" alt="Animation 3" class="lazyload" data-src="images/painting-brushes-scaled.jpg">
+                </div>
+            </section>
         </section>
 
-        <section id="animation-gallery">
-            <h3>Featured Animations</h3>
-            <div class="gallery">
-                <img src="images/painting-brushes-scaled.jpg" alt="Animation 1" class="lazyload">
-                <img src="images/Animation.jpeg" alt="Animation 2" class="lazyload">
-                <img src="images/ART IMAGEE 2.jpeg" alt="Animation 3" class="lazyload">
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Art & Animation Hub</p>
-    </footer>
-
-    <script src="scripts/art&anime.js"></script>
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Art & Animation Hub</title>
-    <link rel="stylesheet" href="styles/art&anime.css">
-</head>
-<body>
-    <header>
-        <h1>Art & Animation Hub</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
         <section id="about">
             <h2>About Our Platform</h2>
             <p>We are passionate about sharing the art of animation and providing a space for artists and enthusiasts to connect.</p>
         </section>
-    </main>
 
-    <footer>
-        <p>&copy; 2025 Art & Animation Hub</p>
-    </footer>
-
-    <script src="scripts/art&anime.js"></script>
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Art & Animation Hub</title>
-    <link rel="stylesheet" href="styles/art&anime.css">
-</head>
-<body>
-    <header>
-        <h1>Art & Animation Hub</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
         <section id="contact">
             <h2>Contact Us</h2>
             <form id="contact-form" onsubmit="return handleFormSubmit(event)">
@@ -121,4 +63,5 @@
 
     <script src="scripts/art&anime.js"></script>
 </body>
+
 </html>
