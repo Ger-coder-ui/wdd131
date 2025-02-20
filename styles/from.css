@@ -31,11 +31,11 @@ label {
     margin-bottom: 10px;
 }
 
-input[type="radio"] {
-    margin-right: 10px;
+#useful-features {
+    margin-left: 20px;
 }
 
-input[type="checkbox"] {
+#useful-features input[type="checkbox"] {
     margin-right: 10px;
 }
 
@@ -53,5 +53,7 @@ footer {
     text-align: center;
     clear: both;
 }
+
+
 
 
