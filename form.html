@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Review Form</title>
-    <link rel="stylesheet" href="styles/from.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -27,35 +27,30 @@
             <label for="date-of-installation">Date of Installation:</label>
             <input type="date" id="date-of-installation" name="date-of-installation" required>
             <br><br>
-            <label for="useful-features">Which feature did you find useful in the product?(Check all that apply):</label>
+            <label><b>Which features did you find useful in the product?(check all that apply)</b></label>
             <div id="useful-features">
-                <input type="checkbox" id="feature-1" name="Which feature did you find useful in the product?" value="Feature 1">
-                <label for="feature-1">Durability</label>
-                <br>
-                <input type="checkbox" id="feature-2" name="Which feature did you find useful in the product?" value="Feature 2">
-                <label for="feature-2">Ease of use</label>
-                <br>
-                <input type="checkbox" id="feature-3" name="Which feature did you find useful in the product?" value="Feature 3">
-                <label for="feature-3">Perfomance</label>
-                <input type="checkbox" id="feature-4" name="Which-feature-did-you-find-useful-in-the-product?" value="Feature 4">
-                <label for="feature-3">Design</label>
+                <input type="checkbox" id="feature-1" name="useful-features" value="Easy to Use">
+                <label for="feature-1">Easy to Use</label>
+                <input type="checkbox" id="feature-2" name="useful-features" value="Fast Performance">
+                <label for="feature-2">Fast Performance</label>
+                <input type="checkbox" id="feature-3" name="useful-features" value="Good Battery Life">
+                <label for="feature-3">Good Battery Life</label>
+                <input type="checkbox" id="feature-4" name="useful-features" value="Design">
+                <label for="feature-4">Affordable Price</label>
             </div>
             <br><br>
-            <label for="written-review">Written Review (optional):</label>
+            <label for="written-review"><b>Review (optional):</b></label>
             <textarea id="written-review" name="written-review"></textarea>
             <br><br>
             <label for="user-name">Your Name (optional):</label>
-            <input type="text" id="your-name" name="your-name">
+            <input type="text" id="Your-name" name="Your-name">
             <br><br>
-            <input type="Post" value="Post-Review">
+            <input type="Post" value="Post review Review">
         </form>
     </main>
     <footer>
-        <p>&copy; 2025 Product Review Form</p>
+        <p>&copy; 202 Product Review Form</p>
     </footer>
     <script src="scripts/form.js"></script>
 </body>
 </html>
-
-
-
