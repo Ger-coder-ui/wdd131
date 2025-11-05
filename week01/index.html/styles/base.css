@@ -1,0 +1,74 @@
+
+
+/* Font setup */
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f9fc;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  background-color: #002b5b;
+  color: white;
+  padding: 1rem;
+}
+
+#course-title {
+  display: block;
+  font-family: 'Lora', serif;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Navigation using Flexbox */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #ffd700;
+}
+
+/* Main Layout */
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  text-align: center;
+}
+
+/* Card styling */
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 1rem;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #002b5b;
+  color: white;
+}
