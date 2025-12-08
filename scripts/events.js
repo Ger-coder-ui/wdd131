@@ -1,36 +1,56 @@
+// Combined events array with images
 const events = [
   {
     name: "Summer Skate Jam",
     date: "2026-03-18",
     location: "Riverside Park",
+    img: "images/event1.jpg"
   },
   {
     name: "Beginner Trick Clinic",
     date: "2026-01-06",
     location: "Downtown Plaza",
+    img: "images/event2.jpg"
   },
   {
     name: "Night Ramp Session",
     date: "2025-12-12",
     location: "Skate Pulse Arena",
+    img: "images/event3.jpg"
+  },
+  {
+    name: "Pro Skateboard Demo",
+    date: "2025-07-05",
+    location: "Riverside Skate Arena",
+    img: "images/event4.jpg"
   }
 ];
 
-document.addEventListener("DOMContentLoaded", () => {
+// Function to render events sorted by date
+function renderEvents() {
   const container = document.getElementById("events-list");
 
+  // Clear existing content
+  container.innerHTML = "";
+
+  // Sort events by date ascending
   events
     .sort((a, b) => new Date(a.date) - new Date(b.date))
     .forEach(event => {
-      const item = document.createElement("div");
-      item.classList.add("event-card");
+      const card = document.createElement("div");
+      card.classList.add("event-card");
 
-      item.innerHTML = `
+      card.innerHTML = `
+        <img src="${event.img}" alt="${event.name}" loading="lazy">
         <h3>${event.name}</h3>
         <p><strong>Date:</strong> ${event.date}</p>
         <p><strong>Location:</strong> ${event.location}</p>
+        <button>RSVP</button>
       `;
 
-      container.appendChild(item);
+      container.appendChild(card);
     });
-});
+}
+
+// Run when page loads
+document.addEventListener("DOMContentLoaded", renderEvents);
