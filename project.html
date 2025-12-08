@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skate Pulse</title>
+  <link rel="stylesheet" href="styles/project.css">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1 class="logo">Skate Pulse</h1>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="contacts.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="images/hero.jpg" alt="Skateboarding hero image" loading="lazy">
+      <div class="hero-text">
+        <h2>Welcome to Skate Pulse</h2>
+        <p>Your hub for skate gear, community and events.</p>
+        <button id="cta-shop">Browse Shop</button>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <h2>Stay Updated</h2>
+      <form id="newsletter-form">
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email" required placeholder="you@example.com">
+        <button type="submit">Subscribe</button>
+      </form>
+      <p id="newsletter-msg" class="hidden"></p>
+    </section>
+
+    <!-- Future sections: shop items, events list, etc. -->
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; <span id="year"></span> Skate Pulse — All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>

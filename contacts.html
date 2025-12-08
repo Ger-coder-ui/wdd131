@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Skate Pulse</title>
+  <link rel="stylesheet" href="styles/project.css" />
+</head>
+<body>
+
+<header>
+  <a href="#main" class="skip-link">Skip to main content</a>
+  <div class="container">
+    <h1 class="logo">Skate Pulse</h1>
+    <nav aria-label="Primary navigation">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="container">
+  <h2>Contact Us</h2>
+  <p>Have a question or suggestion? We’d love to hear from you.</p>
+
+  <form id="contact-form">
+    <fieldset>
+      <legend>Send us a message</legend>
+
+      <label for="fullname">Full Name</label>
+      <input type="text" id="fullname" name="fullname" required>
+
+      <label for="contact-email">Email</label>
+      <input type="email" id="contact-email" name="contact-email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </fieldset>
+  </form>
+
+  <p id="contact-msg" class="hidden"></p>
+</main>
+
+<footer>
+  <div class="container">
+    <p>&copy; <span id="year"></span> Skate Pulse — All rights reserved.</p>
+    <p><a href="references.html">Image & content references</a></p>
+  </div>
+</footer>
+
+<script src="scripts/main.js"></script>
+<script src="scripts/contact.js"></script>
+</body>
+</html>
