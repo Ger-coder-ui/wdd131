@@ -1,17 +1,17 @@
 const events = [
   {
     name: "Summer Skate Jam",
-    date: "2025-07-18",
+    date: "2026-03-18",
     location: "Riverside Park",
   },
   {
     name: "Beginner Trick Clinic",
-    date: "2025-06-03",
+    date: "2026-01-06",
     location: "Downtown Plaza",
   },
   {
     name: "Night Ramp Session",
-    date: "2025-08-12",
+    date: "2025-12-12",
     location: "Skate Pulse Arena",
   }
 ];
