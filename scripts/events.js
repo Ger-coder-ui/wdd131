@@ -4,25 +4,25 @@ const events = [
     name: "Summer Skate Jam",
     date: "2026-03-18",
     location: "Riverside Park",
-    img: "images/event1.jpg"
+    img: "images/Red-bull.jpg"
   },
   {
     name: "Beginner Trick Clinic",
     date: "2026-01-06",
     location: "Downtown Plaza",
-    img: "images/event2.jpg"
+    img: "images/Tactics.jpg"
   },
   {
     name: "Night Ramp Session",
     date: "2025-12-12",
     location: "Skate Pulse Arena",
-    img: "images/event3.jpg"
+    img: "images/Dreamtime.com.jpg"
   },
   {
     name: "Pro Skateboard Demo",
     date: "2025-07-05",
     location: "Riverside Skate Arena",
-    img: "images/event4.jpg"
+    img: "images/skateboard-sprint.jpg"
   }
 ];
 
