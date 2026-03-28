@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="description" content="A place to go for a vacation." />
+    <title>Beautiful Destination</title>
+
+    <link rel="stylesheet" href="styles/place.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         HERO SECTION
+    ========================== -->
+    <header class="hero">
+        <picture>
+            <source media="(min-width: 900px)" src="images/pexels-babijaphoto-27878405.jpg" type="image/jpeg" />
+            <source media="(min-width: 600px)" src="images/pexels-maxzaharenkov-33544874.jpg" type="image/jpeg" />
+            <img src="images/tanner-marquis-xsypL99HP3Q-unsplash.jpg"
+                 alt="Scenic landscape of the destination"
+                 class="hero-image" />
+        </picture>
+
+        <div class="hero-content">
+            <h1 class="hero-title">Victoria - Falls</h1>
+            <p class="hero-subtitle">
+                A stunning place filled with views, culture, and unforgettable experiences.
+            </p>
+        </div>
+    </header>
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+    <main class="container">
+
+        <!-- Overview -->
+        <section class="section">
+            <h2 class="section-title">Overview</h2>
+            <div class="card">
+                <p>
+                    This destination offers breathtaking scenery, serene atmospheres,
+                    and culturally rich experiences. Explore, relax, and enjoy everything
+                    this place has to offer.
+                </p>
+            </div>
+        </section>
+
+        <!-- Gallery -->
+        <section class="section">
+            <h2 class="section-title">Gallery</h2>
+
+            <div class="image-grid">
+                <img src="images/Victoria-falls-image.jpeg" alt="Waterfall view" />
+                <img src="images/pexels-babijaphoto-27878405.jpg" alt="Beautiful scenic view" />
+            </div>
+        </section>
+
+        <!-- Details -->
+        <section class="section">
+            <h2 class="section-title">Details</h2>
+
+            <div class="details-row">
+                <div class="card">
+                    <h3>Location</h3>
+                    <p>Victoria Falls</p>
+                </div>
+
+                <div class="card">
+                    <h3>Hours</h3>
+                    <p>Daily: 8 AM – 8 PM</p>
+                </div>
+
+                <div class="card">
+                    <h3>Contact</h3>
+                    <p>+263 71775 4891</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Weather -->
+        <section class="section weather">
+            <h2 class="weather-title">Weather</h2>
+            <p>Temperature: <span id="temp-value">25°C</span></p>
+            <p>Wind speed: <span id="wind-speed">5 mph</span></p>
+            <p>Wind chill: <span id="wind-chill">N/A</span></p>
+        </section>
+
+    </main>
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Gerald Mango | Zimbabwe</p>
+        <p>Last modified: <span id="last-modified"></span></p>
+    </footer>
+
+    <script src="scripts/place.js" defer></script>
+</body>
+</html>
