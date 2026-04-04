@@ -121,3 +121,52 @@ document.querySelector("nav ul").addEventListener("click", (e) => {
         displayTemples(temples.filter(t => t.area < 10000));
     }
 });
+document.addEventListener("DOMContentLoaded", () => {
+
+    const container = document.getElementById('temple-container');
+
+    function displayTemples(templeList) {
+        container.innerHTML = "";
+
+        templeList.forEach(temple => {
+            const card = document.createElement("section");
+
+            const name = document.createElement("h3");
+            name.textContent = temple.name;
+
+            const location = document.createElement("p");
+            location.textContent = `Location: ${temple.location}`;
+
+            const dedicated = document.createElement("p");
+            dedicated.textContent = `Dedicated: ${temple.dedicated}`;
+
+            const area = document.createElement("p");
+            area.textContent = `Size: ${temple.area.toLocaleString()} sq ft`;
+
+            const figure = document.createElement("figure");
+
+            const img = document.createElement("img");
+            img.src = temple.image;
+            img.alt = temple.name;
+            img.loading = "lazy";
+            img.width = 300;
+            img.height = 200;
+
+            const caption = document.createElement("figcaption");
+            caption.textContent = temple.name;
+
+            figure.appendChild(img);
+            figure.appendChild(caption);
+
+            card.appendChild(name);
+            card.appendChild(location);
+            card.appendChild(dedicated);
+            card.appendChild(area);
+            card.appendChild(figure);
+
+            container.appendChild(card);
+        });
+    }
+
+    displayTemples(temples);
+});

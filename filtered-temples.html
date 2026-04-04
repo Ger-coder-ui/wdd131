@@ -2,66 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Explore a gallery of African temples including Harare, Nairobi, Cape Town, and more.">
+    <meta name="description" content="Explore a gallery of temples for The Church of Jesus Christ of Latter Day Saints">
     <title>Temple Album</title>
     <link rel="stylesheet" href="styles/temples.css">
     <link rel="stylesheet" href="styles/temples-large.css" media="(min-width: 768px)">
-    <script src="scripts/temples.js" defer></script>
+    <script src="scripts/filtered-temples.js" defer></script>
 </head>
 <body>
     <header>
         <h1>Temple Album</h1>
         <nav aria-label="Main navigation">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Old</a></li>
-                <li><a href="#">New</a></li>
-                <li><a href="#">Large</a></li>
-                <li><a href="#">Small</a></li>
+            <ul class="navigation">
+                <li><a href="#" id="home">Home</a></li>
+                <li><a href="#" id="old">Old</a></li>
+                <li><a href="#" id="new">New</a></li>
+                <li><a href="#" id="large">Large</a></li>
+                <li><a href="#" id="small">Small</a></li>
             </ul>
             <button class="hamburger" aria-label="Toggle navigation menu">☰</button>
         </nav>
     </header>
     <main>
         <h1>Temple Images</h1>
-        <div class="temple-grid">
-            <figure>
-                <img src="images/download.jpg" alt="Zimbabwe Harare Temple" loading="lazy" width="300" height="200" >
-                <figcaption>Zimbabwe Harare Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="images/download (1).jpg" alt="Kenya Nairobi Temple" loading="lazy" width="300" height="200">
-                <figcaption>Kenya Nairobi Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="images/download (2).jpg" alt="Cape Town Temple" loading="lazy" width="300" height="200">
-                <figcaption>Cape Town Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="images/download (3).jpg" alt="Congo Brazzavile Temple" loading="lazy" width="300" height="200">
-                <figcaption>Congo Brazzavile Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="images/download (4).jpg"lt="Ghana Accra Temple" loading="lazy" width="300" height="200">
-                <figcaption>Ghana Accra Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="images/download (5).jpg" alt="Johannesburg Temple" loading="lazy" width="300" height="200">
-                <figcaption>Johannesburg Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="images/download (6).jpg" alt="Ghana Kumasi Temple" loading="lazy" width="300" height="200">
-                <figcaption>Ghana Kumasi Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="images/download (7).jpg" alt="Ivory Coast Temple" loading="lazy" width="300" height="200">
-                <figcaption>Ivory Coast Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="images/download (8).jpg" alt="Nigeria Aba Temple" loading="lazy" width="300" height="200">
-                <figcaption>Nigeria Aba Temple</figcaption>
-            </figure>
-        </div>
+        <div class="temple-grid" id="temple-container"> </div>
     </main>
     <footer>
             <p>&copy; <span id="currentyear"></span> | Gerald Mango | Zimbabwe</p>
