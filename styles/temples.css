@@ -1,14 +1,23 @@
+/* Base */
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f9f9f9;
+    color: #111;
 }
 
+/* Header */
 header {
-    background-color: #333;
+    background-color: #222;
     color: #fff;
     padding: 1em;
     text-align: center;
+}
+
+/* Navigation */
+nav {
+    margin-top: 10px;
 }
 
 nav ul {
@@ -16,84 +25,98 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-between;
-}
-
-nav li {
-    margin-right: 20px;
+    gap: 20px;
+    justify-content: center;
 }
 
 nav a {
     color: #fff;
     text-decoration: none;
-    transition: color 0.3s;
+    font-weight: bold;
 }
 
 nav a:hover {
-    color: #ccc;
+    text-decoration: underline;
 }
 
+/* Hamburger */
 .hamburger {
     display: none;
     background: none;
     border: none;
     color: #fff;
-    font-size: 1.5em;
+    font-size: 1.8em;
     cursor: pointer;
 }
 
+/* Main */
 main {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 2em;
 }
 
+/* Grid */
 .temple-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
 }
 
+/* Cards */
+.temple-grid section {
+    background: #fff;
+    border-radius: 10px;
+    padding: 1em;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Image */
 figure {
     margin: 0;
-    padding: 0;
 }
 
 figure img {
     width: 100%;
-    height: 150px;
-    object-fit: cover;
+    height: auto; /* FIXED */
     border-radius: 10px;
 }
 
+/* Caption */
 figcaption {
-    text-align: center;
-    font-size: 0.8em;
-    color: #666;
+    font-size: 0.9em;
+    color: #222; /* FIXED contrast */
+    margin-top: 5px;
 }
 
+/* Footer */
 footer {
-    background-color: #333;
+    background-color: #222;
     color: #fff;
     padding: 1em;
     text-align: center;
-    clear: both;
 }
 
+/* Mobile */
 @media (max-width: 767px) {
     .hamburger {
         display: block;
+        margin: 0 auto;
     }
+
     nav ul {
         display: none;
         flex-direction: column;
-        margin-top: 10px;
+        align-items: center;
     }
+
     nav ul.show {
         display: flex;
     }
 }
 
+/* Desktop */
 @media (min-width: 768px) {
     .temple-grid {
         grid-template-columns: repeat(3, 1fr);
